@@ -11,10 +11,12 @@ class FibonacciTest extends PHPUnit_Framework_TestCase // TestCase
 
     public function __construct()
     {
-        $this->fibonacci = new Fibonacci();
     }
 
-    protected function setUp() {}
+    protected function setUp() {
+        // Training Purpose: Initialization not necessary because all Fibonacci methods are static.
+        $this->fibonacci = new Fibonacci();
+    }
 
     public function testIfIndexIs1ValueIs0()
     {
